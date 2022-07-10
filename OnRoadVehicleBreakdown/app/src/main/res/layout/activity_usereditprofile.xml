@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Usereditprofile">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0E0C0C"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="EDIT PROFILE" />
+
+    <EditText
+        android:id="@+id/etupfname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Shop Name" />
+    <EditText
+        android:id="@+id/etuplname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Last Name" />
+
+
+    <EditText
+        android:id="@+id/etupplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginTop="05dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="PLACE" />
+
+
+    <EditText
+        android:id="@+id/etupphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginTop="05dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:hint="PHONE"/>
+
+
+    <EditText
+        android:id="@+id/etupemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginTop="05dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="EMAIL"/>
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="05dp"
+        android:text="UPDATE" />
+</LinearLayout>

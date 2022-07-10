@@ -1,0 +1,54 @@
+{% include 'adminheader.html' %}
+  <section class="main-home" id="home">
+      <div style=" background-image: url(/static/images/br7.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  
+  right: 0;
+  bottom: 0;
+  left: 0;" ></div> <!-- Background image -->
+      <div class="home__header-content" style="top:27%">
+        <div id="main-home-carousel" class="owl-carousel">
+          <div>
+<center>
+{% if data['request'] %}
+<h1 align="center">VIEW REQUESTS</h1>
+<table class="table" style="width: 800px">
+	<tr>
+		<th>SL.NO</th>
+		<th>USER</th>
+		<th>MECHANIC SHOP</th>
+		<th>AMOUNT</th>
+		<th>STATUS</th>
+		<th>DATE</th>
+		
+	</tr>
+	{% for row in data['request'] %}
+	<tr>
+		<td>{{loop.index}}</td>
+		
+		<td>{{row['firstname']}}</td>
+		<td>{{row['shopname']}}</td>
+		<td>{{row['amount']}}</td>
+		<td>{{row['status']}}</td>
+		<td>{{row['date']}}</td>
+		
+	</tr>
+	{% endfor %}
+</table>
+{% else %}
+<h1>NO USER REQUEST HISTORY</h1>
+{% endif %}
+
+</form>
+</center>
+
+
+          </div><!--slide item like paragraph-->
+
+        </div>
+      </div>
+    </section>
+{% include 'footer.html' %}
